@@ -1,6 +1,7 @@
 package com.db_labs;
 
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -8,9 +9,9 @@ import java.util.Map;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        DayTwo d2 = new DayTwo();
-        int num = 25;
-        int[] move = {1,2,3,4,0,6};
+//        DayTwo d2 = new DayTwo();
+//        int num = 25;
+//        int[] move = {1,2,3,4,0,6};
 //        int[] numsArr = {3, 6, -2, -5, 7, 3};
 //        String[] arr = {"Flower", "Flood", "Flow"};
 //        TwoSum twoSum = new TwoSum();
@@ -57,29 +58,57 @@ public class Main {
 //        String longestWord = d2.longestWord(sentence);
 //        System.out.println("Longest Word: " + longestWord);
 
-        DayThree d3 = new DayThree();
-        String s1 = "Listen";
-        String s2 = "Silent";
-        boolean isAnagram = d3.isAnagram(s1, s2);
-        System.out.println("Is Anagram: " + isAnagram);
-        String s3 = "husshh";
-        char firstDuplicate = d3.firstRepeatedChar(s3);
-        System.out.println(firstDuplicate);
-        int[] arr = {1,3,8,5,9,4,6};
-        int target = 10;
-        int[] result = d3.twoSumArr(arr, target);
-        System.out.println(Arrays.toString(result));
+//        DayThree d3 = new DayThree();
+//        String s1 = "Listen";
+//        String s2 = "Silent";
+//        boolean isAnagram = d3.isAnagram(s1, s2);
+//        System.out.println("Is Anagram: " + isAnagram);
+//        String s3 = "husshh";
+//        char firstDuplicate = d3.firstRepeatedChar(s3);
+//        System.out.println(firstDuplicate);
+//        int[] arr = {1,3,8,5,9,4,6};
+//        int target = 10;
+//        int[] result = d3.twoSumArr(arr, target);
+//        System.out.println(Arrays.toString(result));
+//
+//        String[] anagrams = {"eat", "tea", "tan", "ate", "nat", "bat"};
+//        Map<String, List<String>> group = d3.groupAnagrams(anagrams);
+//        System.out.println(group);
+//
+//        String para = "bob hit a ball, the hit ball flew far after it was hit.";
+//        String [] banned = {"hit"};
+//        String resultPara = d3.mostCommonWord(para, banned);
+//
+//        int[] nums = {1, 2, 1, 3, 2, 4};
+//        int[] resultSet = d3.solution(nums);
+//        System.out.println(Arrays.toString(resultSet));
+//
+//        int res = d4.returnFirstDuplicate(nums);
+//        System.out.println("First Duplicate: " + res);
+//
+//        int[] twoSumArr = {1,3,5,4,9};
+//        int targetOfTwoSum = 7;
+//        int[] twoSumRes = d4.twoSum(twoSumArr, targetOfTwoSum);
+//        System.out.println(Arrays.toString(twoSumRes));
+//
+//        boolean isSequence = d4.isSubSequence("abc", "aachb");
+//        System.out.println("Is Sequence: " + isSequence);
+//
+//        int[] arrPr = {1,2,3,4,5};
+//        int[] resultPr = d4.returnProductOfArray(arrPr);
+//        System.out.println("Final Result: " + Arrays.toString(resultPr));
+//        int[] increase = {4,1,3};
+//        int stepsTaken = d4.strictAsc(increase);
+//        System.out.println("Total Steps: " + stepsTaken);
 
-        String[] anagrams = {"eat", "tea", "tan", "ate", "nat", "bat"};
-        Map<String, List<String>> group = d3.groupAnagrams(anagrams);
-        System.out.println(group);
+        DayFour d4 = new DayFour();
 
-        String para = "bob hit a ball, the hit ball flew far after it was hit.";
-        String [] banned = {"hit"};
-        String resultPara = d3.mostCommonWord(para, banned);
 
-        int[] nums = {1, 2, 1, 3, 4};
-        int[] resultSet = d3.solution(nums);
-        System.out.println(Arrays.toString(resultSet));
+        String strass = "abcdacdbcbd";
+        int maxPoss = d4.lengthOfLongestSubstring(strass);
+        System.out.println("Max Substring: " + maxPoss);
     }
+
+
+
 }
